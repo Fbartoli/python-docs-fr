@@ -6,18 +6,18 @@ msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-01-03 16:57+0100\n"
-"PO-Revision-Date: 2017-08-10 00:59+0200\n"
+"PO-Revision-Date: 2019-01-11 21:00+0100\n"
 "Last-Translator: Julien Palard <julien@palard.fr>\n"
 "Language-Team: FRENCH <traductions@lists.afpy.org>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 2.2\n"
 
 #: ../Doc/library/binascii.rst:2
 msgid ":mod:`binascii` --- Convert between binary and ASCII"
-msgstr ""
+msgstr ":mod: `binascii` --- conversion entre binaire et ASCII"
 
 #: ../Doc/library/binascii.rst:15
 msgid ""
@@ -28,6 +28,12 @@ msgid ""
 "low-level functions written in C for greater speed that are used by the "
 "higher-level modules."
 msgstr ""
+"Le module :mod:`binascii` contient des méthodes pour convertir entre binaire "
+"et diverses représentations binaires encodées en ASCII. Normalement, vous "
+"n’allez pas utiliser ces fonctions directement mais vous utiliserez des "
+"modules d’encapsulage comme :mod:`uu`, :mod:`base64`, or :mod:`binhex` à la "
+"place. Le module :mod:`binascii` contient des fonctions bas niveau écrites "
+"en C plus rapides qui sont utilisées par des modules haut niveau."
 
 #: ../Doc/library/binascii.rst:24
 msgid ""
@@ -40,6 +46,8 @@ msgstr ""
 #: ../Doc/library/binascii.rst:29
 msgid "ASCII-only unicode strings are now accepted by the ``a2b_*`` functions."
 msgstr ""
+"Les chaines de caractères unicode seulement composées de caractères ASCII "
+"sont désormais acceptées par les fonctions ``a2b_*``."
 
 #: ../Doc/library/binascii.rst:33
 msgid "The :mod:`binascii` module defines the following functions:"
@@ -162,6 +170,10 @@ msgid ""
 "*data* is converted into the corresponding 2-digit hex representation.  The "
 "returned bytes object is therefore twice as long as the length of *data*."
 msgstr ""
+"Renvoie la représentation hexadécimale du binaire *donnée*. Chaque octet de "
+"*donnée* est convertit en la représentation 2 chiffres correspondante. "
+"L’objet octets renvoyé est donc deux fois plus long que la longueur de "
+"*donnée*."
 
 #: ../Doc/library/binascii.rst:155
 msgid ""
@@ -176,23 +188,37 @@ msgid ""
 "number of hexadecimal digits (which can be upper or lower case), otherwise "
 "an :exc:`Error` exception is raised."
 msgstr ""
+"Renvoie la donnée binaire représentée par la chaine de caractère "
+"hexadécimale *hexstr*. Cette fonction est l’inverse de :func:`b2a_hex`. "
+"*hexstr* doit contenir un nombre pair de chiffres hexadécimaux (qui peuvent "
+"être en majuscule ou minuscule), sinon une exception :exc:`Error` exception "
+"est levée."
 
 #: ../Doc/library/binascii.rst:166
+#, fuzzy
 msgid ""
 "Similar functionality (accepting only text string arguments, but more "
 "liberal towards whitespace) is also accessible using the :meth:`bytes."
 "fromhex` class method."
 msgstr ""
+"Fonctionnalité similaire (acceptant seulement des arguments, chaines de "
+"caractères, de type texte) est également accessible en utilisant la méthode "
+"de classe :meth:`bytes.fromhex`."
 
 #: ../Doc/library/binascii.rst:172
 msgid "Exception raised on errors. These are usually programming errors."
 msgstr ""
+"Exception levée par des erreurs. Elles sont habituellement des erreurs de "
+"programmation."
 
 #: ../Doc/library/binascii.rst:177
 msgid ""
 "Exception raised on incomplete data. These are usually not programming "
 "errors, but may be handled by reading a little more data and trying again."
 msgstr ""
+"Exception levée par des données incomplète. Elles ne sont habituellement pas "
+"des erreurs de programmation mais peut être gérer en lisant plus de données "
+"et en essayant encore."
 
 #: ../Doc/library/binascii.rst:185
 msgid "Module :mod:`base64`"
@@ -202,6 +228,7 @@ msgstr "Module :mod:`base64`"
 msgid ""
 "Support for RFC compliant base64-style encoding in base 16, 32, 64, and 85."
 msgstr ""
+"Support de l’encodage base64-style conforme RFC en base 16, 32, 64 et 85."
 
 #: ../Doc/library/binascii.rst:188
 msgid "Module :mod:`binhex`"
@@ -209,7 +236,7 @@ msgstr "Module :mod:`binhex`"
 
 #: ../Doc/library/binascii.rst:188
 msgid "Support for the binhex format used on the Macintosh."
-msgstr ""
+msgstr "Support pour le format binhex utilisé sur Macintosh."
 
 #: ../Doc/library/binascii.rst:191
 msgid "Module :mod:`uu`"
@@ -226,3 +253,4 @@ msgstr "Module :mod:`quopri`"
 #: ../Doc/library/binascii.rst:194
 msgid "Support for quoted-printable encoding used in MIME email messages."
 msgstr ""
+"Support de l’encodage “quote-printable” utilisé par les messages email MIME."
